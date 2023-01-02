@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #404040;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox layoutX="91.0" layoutY="129.0" prefHeight="4.0" prefWidth="160.0" style="-fx-background-color: #007a99;" />
+      <TextField id="dictionaryTF" fx:id="dictionaryTF" alignment="CENTER" layoutX="90.0" layoutY="100.0" onAction="#dictAction" prefHeight="25.0" prefWidth="160.0" promptText="Enter Dictionary" style="-fx-background-color: #404040;  -fx-text-fill: white;">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="sentenceTF" alignment="CENTER" layoutX="262.0" layoutY="100.0" prefHeight="25.0" prefWidth="191.0" promptText="Enter Sentence" style="-fx-background-color: #404040; -fx-text-fill: white;">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></TextField>
+      <Button fx:id="check" layoutX="463.0" layoutY="110.0" mnemonicParsing="false" onAction="#checkClickedV2" style="-fx-background-color: #007a99;" text="Check" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="12.0" />
+         </font></Button>
+      <HBox layoutX="263.0" layoutY="129.0" prefHeight="4.0" prefWidth="191.0" style="-fx-background-color: #007a99;" />
+      <TextArea fx:id="output" editable="false" layoutX="89.0" layoutY="145.0" prefHeight="200.0" prefWidth="421.0" style="-fx-background-color: #404040;">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></TextArea>
+      <Label layoutX="245.0" layoutY="29.0" text="Word Break" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutX="243.0" layoutY="56.0" prefHeight="4.0" prefWidth="75.0" style="-fx-background-color: #a3297a;" />
+      <VBox layoutX="231.0" layoutY="23.0" prefHeight="38.0" prefWidth="8.0" style="-fx-background-color: #a3297a;" />
+   </children>
+</AnchorPane>
